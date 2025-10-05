@@ -10,7 +10,7 @@
         <meta name="robots" content="index, follow">
         <link rel="icon" href="../favicon.png" sizes="32x32">
 
-        <meta name="website" content="nytwordle.github.io" />
+        <meta name="website" content="worlde-online.github.io" />
         <meta name="theme-color" content="#6aaa64">
         <style>
             /* Global Styles & Colors */
@@ -112,6 +112,31 @@
                 /* Prevent scrollbar appearing on page transition */
                 overflow-y: hidden;
             }
+              /* Left & Right Ad Containers */
+  .ad-left, .ad-right {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 250px;
+    z-index: 999;
+  }
+
+  .ad-left {
+    left: 10px;
+  }
+
+  .ad-right {
+    right: 10px;
+  }
+
+  /* Main Game Area */
+  .game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
         </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0RBM3QP18"></script>
@@ -124,7 +149,35 @@
 </script>
 
     </head>
+    
     <body style="overflow:hidden;">
+        
+<!-- ====== LEFT AD ====== -->
+<div class="ad-left">
+  <script type="text/javascript">
+    atOptions = {
+      'key': 'a94908714a90c15e3b16e41000e32483',
+      'format': 'iframe',
+      'height': 250,
+      'width': 300,
+      'params': {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/a94908714a90c15e3b16e41000e32483/invoke.js"></script>
+</div>
+<!-- RIGHT AD -->
+<div class="ad-right">
+  <script type="text/javascript">
+    atOptions = {
+      'key': 'a94908714a90c15e3b16e41000e32483',
+      'format': 'iframe',
+      'height': 250,
+      'width': 300,
+      'params': {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/a94908714a90c15e3b16e41000e32483/invoke.js"></script>
+</div>
         <script>
             (function() {
                 // Defining the hash before the main bundle allows the bundle access window.hash
@@ -133,10 +186,8 @@
             }
             )();
         </script>
-        
-
             
-        <script src="main.js"></script>
+        <script src="https://worlde-online.github.io/main.js"></script>
         <game-app></game-app>
 
         <div id="article-section" style="padding: 20px; max-width: 800px; margin: auto; color: var(--color-tone-1); background: var(--color-background);">
